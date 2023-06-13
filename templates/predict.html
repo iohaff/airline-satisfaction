@@ -1,0 +1,9 @@
+{% block content %}
+    <h3 >Prediction is {{ prediction[0] }}</h3><br>
+    {% if prediction[0] == "sattisfied" %}
+    <img src="{{url_for('static', filename='images/satisfied.png')}}" />
+    {% endif %}
+    {% if prediction[0] == "dissatisfied" %}
+    <img src="{{url_for('static', filename='images/dissatisfied.png')}}"/>
+    {% endif %}
+{% endblock %}

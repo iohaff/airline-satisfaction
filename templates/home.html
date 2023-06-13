@@ -1,0 +1,29 @@
+{% block content %}
+<form action = "/predict/" method="post">
+    <label>Age</label><br>
+    <input type="text" name="Age"><br>
+
+    <label>Gender</label><br>
+    <input type="text" name="Gender"><br>
+
+    <label>Customer Type</label><br>
+    <input type="text" name="Customer Type"><br>
+
+    <label>Class</label><br>
+    <input type="text" name="Class"><br>
+
+    <label>Type of Travel</label><br>
+    <input type="text" name="Type of Travel"><br>
+
+    <label>Checkin Service</label><br>
+    <input type="text" name="Checkin service"><br>
+
+    <label>Flight Distance</label><br>
+    <input type="text" name="Flight Distance"><br>
+
+    <label>Departure Delay in Minutes</label><br>
+    <input type="text" name="Departure Delay in Minutes"><br>
+    
+    <button type="submit">Predict</button>
+</form>
+{% endblock %}
